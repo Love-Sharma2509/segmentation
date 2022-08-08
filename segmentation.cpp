@@ -66,7 +66,7 @@ int main(int argc, char **argv)
 			x[i][j] = sumx;
 		}
 	}
-    int mid_x,mid_y,dis1,dis2,dis3,dis4,min,min1;
+    int mid_x,mid_y,dis1,dis2,a,b,c,d,min,min1;
     //dis1 and dis2 are for x-axis and dis3 and dis4 are for y-axis
     //dis stands for distance to calculate the nearest intensity=255
     mid_x=width/2;
@@ -81,6 +81,8 @@ int main(int argc, char **argv)
             if(x[i][j]==255 && min > dis1)
             {
                 min=dis1;
+                a=i;
+                b=j;
             }
         }
     }
@@ -92,7 +94,14 @@ int main(int argc, char **argv)
             if(x[i][j]==255 && min1 > dis2)
             {
                 min1=dis2;
+                c=i;
+                d=j;
             }
         }
+    }
+    if(min1<min)
+    {
+        //logic for selecting whether the pixel is to be included in the image or not
+        // going to use mask radius logic to find whether the neighbouring pixels have 255 or not
     }
 }
