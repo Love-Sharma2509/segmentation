@@ -8,3 +8,11 @@ Image segmentation is typically used to locate objects and boundaries (lines, cu
 The result of image segmentation is a set of segments that collectively cover the entire image, or a set of contours extracted from the image. Each of the pixels in a region are similar with respect to some characteristic or computed property, such as color, intensity, or texture. Adjacent regions are significantly different color respect to the same characteristic(s).
 
 In this document, we are trying to implement Image segmentation from scratch(without using any user defined library) in C++. ***With as minimal performance as possible.***
+
+## visual examples of **Image Segmentation**
+
+![Dog Output](assets/readme_imgs/inp1.png)
+
+![Dog Output extra](assets/readme_imgs/inp2.png)
+
+This represents image segmentation very well.
